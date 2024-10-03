@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block main_block%}
+
+<div class="container"></div>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 border border-4 my-5">
+
+        <h1 class="text-center"> Daily Tasks</h1>
+
+        
+
+            <form action=""method="post">
+
+                {%csrf_token%}
+                {{form}}
+
+                <button type="submit" class="bg-danger w-100 btn btn-auto text-white my-4 py-2">add</button>
+
+            </form>
+
+    </div>
+
+</div>
+<div class="col-4"></div>
+</div>
+
+{%endblock%}
